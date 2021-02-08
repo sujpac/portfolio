@@ -6,9 +6,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.79.0">
-    <title>Album example · Bootstrap v5.0</title>
+    <meta name="author" content="">
+    <meta name="generator" content="">
+
+    <title>Sujit Packiaraj</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
 
@@ -59,7 +60,7 @@
         <div class="navbar-nav ms-auto">
           <a class="nav-link" href="https://github.com/sujpac">Github</a>
           <a class="nav-link" href="{% static 'resume.pdf' %}">Resume</a>
-          <a class="nav-link" href="#">Blog</a>
+          <a class="nav-link" href="{% url 'allblogs' %}">Blog</a>
         </div>
       </div>
     </div>
@@ -72,7 +73,7 @@
     <div class="row py-lg-5">
       <div class="mx-auto">
         <h1 class="fw-light">Hi, I'm Sujit.</h1>
-        <p class="lead text-muted">Hey, my name is Sujit Packiaraj and I love to make Django websites. It's the thrill of handling the requests that the people want!</p>
+        <p class="lead text-muted">My name is Sujit Packiaraj and I love to make Django websites. It's the thrill of handling the requests that the people want!</p>
         <p>
           <a href="mailto:sujitpack@gmail.com" class="btn btn-primary my-2">Email Me</a>
         </p>
@@ -93,13 +94,6 @@
 
             <div class="card-body">
               <p class="card-text">{{ job.summary }}</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
             </div>
           </div>
         </div>
