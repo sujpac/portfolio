@@ -94,9 +94,13 @@
 
             <div class="card-body">
               <p class="card-text">
-                <a href="{{ job.link }}" target="_blank" rel="noopener noreferrer">
-                  <b><em>{{ job.title }}</em></b>
-                </a>
+                {% if job.link %}
+                  <a href="{{ job.link }}" target="_blank" rel="noopener noreferrer">
+                    <b><em>{{ job.title }}</em></b>
+                  </a>
+                {% else %}
+                  <a href="/"><b><em>{{ job.title }}</em></b></a>
+                {% endif %}
                 <br>
                 {{ job.summary }}
               </p>
