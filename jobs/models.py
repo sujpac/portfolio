@@ -8,4 +8,4 @@ class Job(models.Model):
     link = models.URLField(blank=True)
 
     def __str__(self):
-        return self.summary[:10]
+        return self.title

@@ -94,10 +94,11 @@
 
             <div class="card-body">
               <p class="card-text">
-                <b>{{ job.title }}: </b>{{ job.summary }}
-              </p>
-              <p class="card-text">
-                <a href="{{ job.link }}" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="{{ job.link }}" target="_blank" rel="noopener noreferrer">
+                  <b><em>{{ job.title }}</em></b>
+                </a>
+                <br>
+                {{ job.summary }}
               </p>
             </div>
           </div>
