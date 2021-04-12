@@ -4,7 +4,7 @@ from .models import Blog
 
 
 def allblogs(request):
-    blogs = Blog.objects
+    blogs = Blog.objects.order_by('-pub_date')
     return render(request, 'blog/allblogs.html', {'blogs': blogs})
 
 
