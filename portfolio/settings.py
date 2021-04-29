@@ -25,7 +25,7 @@ SECRET_KEY = '&_3r2d(df^3f7*n)&i)ak$aq04$ao0y(4yvz$637_*ctl&d2=&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['sujitp.me', '128.199.3.177']
 
 
 # Application definition
